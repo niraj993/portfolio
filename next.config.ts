@@ -14,9 +14,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'export', // This is the new way to specify static export
-  basePath: '/portfolio',  // Replace with your repository name
-  assetPrefix: '/portfolio',  // Replace with your repository name
+  // output: 'export', // This is the new way to specify static export
+  // basePath: '/portfolio',  // Replace with your repository name
+  // assetPrefix: '/portfolio',  // Replace with your repository name
 };
 
 export default nextConfig;

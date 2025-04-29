@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light Mode Theme - Devfolio Pro */
+    --background: 210 17% 97%; /* Light gray (#F6F8FA) */
+    --foreground: 212 11% 16%; /* Dark blue/gray (#24292F) */
+    --card: 0 0% 100%; /* White for cards */
+    --card-foreground: 212 11% 16%; /* Dark blue/gray (#24292F) */
+    --popover: 0 0% 100%;
+    --popover-foreground: 212 11% 16%;
+    --primary: 212 11% 16%; /* Dark blue/gray (#24292F) */
+    --primary-foreground: 0 0% 98%; /* Almost white */
+    --secondary: 210 17% 90%; /* Slightly darker gray */
+    --secondary-foreground: 212 11% 16%; /* Dark blue/gray (#24292F) */
+    --muted: 210 17% 90%; /* Slightly darker gray */
+    --muted-foreground: 212 11% 45%; /* Muted dark blue/gray */
+    --accent: 174 60% 40%; /* Teal (#26A69A) */
+    --accent-foreground: 0 0% 98%; /* Almost white */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 17% 85%; /* Lighter border */
+    --input: 210 17% 85%; /* Lighter input border */
+    --ring: 174 60% 40%; /* Teal (#26A69A) */
+    --chart-1: 174 60% 40%; /* Teal */
+    --chart-2: 212 80% 50%; /* Brighter Blue */
+    --chart-3: 30 80% 55%; /* Orange */
+    --chart-4: 280 65% 60%; /* Purple */
+    --chart-5: 12 76% 61%; /* Reddish */
+    --radius: 0.5rem;
+    --sidebar-background: 212 11% 16%; /* Dark blue/gray (#24292F) */
+    --sidebar-foreground: 0 0% 98%; /* Almost white */
+    --sidebar-primary: 174 60% 40%; /* Teal (#26A69A) */
+    --sidebar-primary-foreground: 0 0% 98%; /* Almost white */
+    --sidebar-accent: 212 11% 25%; /* Slightly lighter dark blue/gray */
+    --sidebar-accent-foreground: 0 0% 98%; /* Almost white */
+    --sidebar-border: 212 11% 25%;
+    --sidebar-ring: 174 60% 40%; /* Teal (#26A69A) */
+  }
+
+  .dark {
+    /* Dark Mode Theme - Devfolio Pro (Black Background) */
+    --background: 212 11% 5%; /* Very Dark Blue/Gray (Near Black) */
+    --foreground: 0 0% 98%; /* Almost white */
+    --card: 212 11% 12%; /* Slightly lighter than background */
+    --card-foreground: 0 0% 98%; /* Almost white */
+    --popover: 212 11% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 174 60% 50%; /* Brighter Teal */
+    --primary-foreground: 212 11% 10%; /* Very Dark Blue/Gray */
+    --secondary: 212 11% 15%; /* Slightly lighter dark blue/gray */
+    --secondary-foreground: 0 0% 98%; /* Almost white */
+    --muted: 212 11% 15%; /* Slightly lighter dark blue/gray */
+    --muted-foreground: 210 17% 70%; /* Lighter muted gray */
+    --accent: 174 60% 40%; /* Teal (#26A69A) */
+    --accent-foreground: 0 0% 98%; /* Almost white */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 212 11% 20%; /* Slightly lighter dark blue/gray */
+    --input: 212 11% 20%; /* Slightly lighter dark blue/gray */
+    --ring: 174 60% 50%; /* Brighter Teal */
+    --chart-1: 174 60% 50%; /* Brighter Teal */
+    --chart-2: 212 80% 60%; /* Brighter Blue */
+    --chart-3: 30 80% 65%; /* Brighter Orange */
+    --chart-4: 280 65% 70%; /* Brighter Purple */
+    --chart-5: 12 76% 71%; /* Brighter Reddish */
+    --sidebar-background: 212 11% 10%; /* Match card color */
+    --sidebar-foreground: 0 0% 98%; /* Almost white */
+    --sidebar-primary: 174 60% 50%; /* Brighter Teal */
+    --sidebar-primary-foreground: 212 11% 5%; /* Match background */
+    --sidebar-accent: 212 11% 20%; /* Slightly lighter dark blue/gray */
+    --sidebar-accent-foreground: 0 0% 98%; /* Almost white */
+    --sidebar-border: 212 11% 20%;
+    --sidebar-ring: 174 60% 50%; /* Brighter Teal */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Add subtle transitions */
+@layer utilities {
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+   .hover-scale {
+      @apply transition-transform duration-300 ease-in-out hover:scale-[1.03];
+   }
+}
