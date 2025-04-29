@@ -6,17 +6,17 @@ const experiences = [
     company: 'Elcom Digital',
     title: 'Software Developer',
     duration: 'Present',
-    description: 'Contributing to the development and maintenance of various software solutions, including projects like Sense and Task Manager.', // Updated description
+    description: 'Contributed to the development and deployment of NoSky Sense and built robust ETL pipelines using AWS services and Python Pandas. Participated in end-to-end software development, including backend development, setting up databases, and designing database schemas, as well as cloud-based deployment. Supported key projects, such as NoSky Sense and the ETL pipelines, ensuring scalable, maintainable, and efficient software solutions.',  
     icon: Building,
   },
   {
     company: 'Automaton AI',
-    title: 'Machine Learning Eng Intern',
+    title: 'Machine Learning Engineer Intern',
     duration: 'Previous Role', // Adjust duration as needed
-    description: 'Gained hands-on experience in Machine Learning development methodologies and AI concepts.',
+    description: 'Gained hands-on experience in developing and deploying machine learning models using tools such as TensorFlow, Scikit-learn, and Keras, applying AI methodologies, and optimizing data processing and model performance. Contributed to the design and implementation of AI-driven solutions using Python, Pandas, NumPy, and advanced machine learning frameworks.',
     icon: BrainCircuit, // Icon representing AI/Automation
   },
-  // Add more experiences as needed
+
 ];
 
 export default function ExperienceSection() {

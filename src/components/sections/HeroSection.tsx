@@ -22,7 +22,7 @@ export default function HeroSection() {
             Niraj Kumar
           </h1>
           <p className="max-w-[700px] text-lg md:text-xl text-foreground/80">
-          I'm a Data Scientist and Software Developer with 2 years of hands-on experience, specializing in Python (OOP), SQL, and AWS. I have successfully designed, developed, and deployed scalable web applications using Django, React, Node.js, and Express, with robust deployment pipelines powered by Nginx and Gunicorn. My expertise also spans machine learning, data analysis, and API development. In addition, I am skilled in DevOps practices, leveraging Linux, Git, Docker, and AWS services to streamline development workflows and drive operational efficiency.
+          Data Scientist & Software Developer with 2 years of experience in Python, SQL, AWS, and full-stack application development. Proficient in Django, React, and Node.js, with a strong background in deploying scalable solutions using Docker, Nginx, and CI/CD pipelines. Experienced in machine learning, API development, and DevOps practices across Linux and AWS environments.
          </p>
           <div className="flex flex-wrap justify-center gap-4 pt-4">
              <Button asChild variant="default" size="lg" className="hover-scale">
